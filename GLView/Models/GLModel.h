@@ -50,7 +50,7 @@
 - (instancetype)initWithData:(NSData *)data;
 
 - (void)draw;
-
+@property (nonatomic, readonly) BOOL isBackgroundMask;
 @end
 
 
