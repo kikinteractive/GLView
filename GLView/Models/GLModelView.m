@@ -93,8 +93,10 @@
     if (texture != nil)
     {
         [self.textures addObject:texture];
-        [self setNeedsDisplay];
+    } else {
+        [self.textures addObject:[NSNull null]];
     }
+    [self setNeedsDisplay];
 }
 
 - (void)setModelTransform:(CATransform3D)modelTransform
